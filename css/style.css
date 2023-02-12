@@ -10,26 +10,25 @@
 }
 
 body {
+    font-family: 'Nunito';
     margin: 0;
     background: #e9e9e9;
-    font-family: 'work sans', sans-serif;
     font-weight: 400;
-
 }
 
-
 /* navigation styling */
-
 header {
     background: var(--primary);
     text-align: center;
     position: fixed;
     z-index: 999;
     width: 100%;
+
 }
 
 .logo {
     color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .navigation-icon {
@@ -128,7 +127,6 @@ nav a:hover {
 }
 
 /* Home page styling */
-
 .home-page-body {
     background-image: url("../images/Home-background-by-Pat-Whelen.jpg");
     background-color: rgb(121, 121, 121);
@@ -162,7 +160,6 @@ nav a:hover {
 }
 
 /* Highlights section styling */
-
 .three-highlights {
 
     margin-top: 200px;
@@ -215,8 +212,6 @@ nav a:hover {
     height: 200px;
 }
 
-
-
 /* Menu page styling */
 
 .menu-page-body {
@@ -236,13 +231,15 @@ nav a:hover {
 .menu-title {
     margin-top: 2em;
     text-align: center;
-    font-size: 30px;
+    font-size: 40px;
     color: white;
+    -webkit-text-stroke: 0.01px black;
 }
 
 .menu-additional-info {
     color: white;
     font-size: 20px;
+    -webkit-text-stroke: 0.1px black;
 }
 
 .menu-table {
@@ -311,7 +308,6 @@ td {
     background-blend-mode: multiply;
 }
 
-
 .contact-start {
     background: var(--primary-dark);
 }
@@ -330,7 +326,6 @@ td {
     padding: 0.1em;
     justify-content: center;
 }
-
 
 .opening-hours, .map {
     max-width: 500px;
@@ -397,6 +392,16 @@ input[type=text], select, textarea {
     margin-top: 160px;
   }
 
+/* Credits page styling */
+.credits-list{
+    padding-left: 3em;
+}
+
+/*video page styling */
+
+.video {
+    padding-left: 3em;
+}
 
 /* footer styling */
 
@@ -424,34 +429,22 @@ footer {
 }
 
 .footer-opening-hours {
-    margin-left: 3em;
+    margin-left: 0.1em;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2em;
+    padding-left: 0.1em;
     border-left: 1px solid black;
 }
 
 .footer-contact-information {
-    margin-left: 3em;
+    margin-left: 2em;
     font-size: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding-left: 2em;
+    padding-left: 0.1em;
     border-left: 1px solid black;
 }
-
-/* Credits page styling */
-.credits-list{
-    padding-left: 3em;
-}
-
-/*video page styling */
-
-.video {
-    padding-left: 3em;
-}
-
 
 /* Responsivity styling */
 
@@ -460,7 +453,6 @@ footer {
         display: none;
         
     }
-
 
     header {
         display: grid;
@@ -478,8 +470,6 @@ footer {
         justify-content: flex-end;
         align-items: center;
     }
-
-
 
     nav ul {
         display: flex;
