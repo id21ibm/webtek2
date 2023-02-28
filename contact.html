@@ -10,6 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    
 
 </head>
 
@@ -44,13 +47,13 @@
                     Lördag 11-20<br>
                     Söndag: 11-20</p>
                 <h2>Telefonnummer</h2>
-                <p>090-14 25 06</p>
+                <p>090-14 25 06<br></p>
             </div>
 
             <div class="map">
                 <h2>Hitta hit</h2>
-                <p>adress: Ringvägen 35</p>
-                <img src="images/map-by-Google-Maps.jpg" alt="Map of restaurant location" class="map-image">
+                <p>adress: Ringvägen 35<br>Håll musen över kartan för att förstora</p>
+                <img src="images/map-by-Google-Maps.jpg" alt="Map of restaurant location" class="map-image" onmouseover="enlargeImage(this)" onmouseout="normalSizeImage(this)">
             </div>  
         </div>
       
@@ -58,18 +61,18 @@
 
 
 <div class="contact-form">
-    <form action="action-page.php">
+    <form action="contact.html">
   
-      <label for="fname">Namn</label>
-      <input type="text" id="fname" name="firstname" placeholder="namn">
+      <label for="name">Namn</label>
+      <input type="text" id="name" name="firstname" placeholder="Namn" onfocus="focusFunctionName()" onblur="blurFunctionName()">
   
-      <label for="lname"><br>E-post</label>
-      <input type="text" id="lname" name="lastname" placeholder="E-post">
+      <label for="email"><br>E-post</label>
+      <input type="text" id="email" name="lastname" placeholder="E-post" onfocus="focusFunctionEmail()" onblur="blurFunctionEmail()">
   
       <label for="subject"><br>Meddelande<br></label>
-      <textarea id="subject" name="subject" placeholder="" style="height:200px"></textarea>
+      <textarea id="subject" name="subject" placeholder="" style="height:200px" onfocus="focusFunctionSubject()" onblur="blurFunctionSubject()"></textarea>
   
-      <input type="submit" value="Skicka">
+      <input type="submit" id="submit-button" value="Skicka">
   
     </form>
   </div>

@@ -10,6 +10,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Nunito' rel='stylesheet'>
     <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
 
 </head>
 
@@ -31,11 +33,12 @@
     </header>
       
     <main>
+
         <div class="top-mover"></div>
 
         <section>
             <div class="intro">
-                <h2 class="about-pizzeria">Om oss</h2>
+                <h2 class="about-pizzeria" id="about-us">Om oss</h2>
                 <p>Vi är fast beslutna om att bara göra riktiga pizzor. På riktiga råvaror som är särskilt utvalda av Maestro. Alla våra ingredienser är färska. Alla våra såser är dessutom gjorda av oss själva på Svalan. Vi köper in färskt kött och kryddar det helt själva för att uppnå den bästa kundupplevelsen. En av våra populäraste beställningar är våra kebabrätter. Vi använder oss av en kebabgrill för att få kebaben perfekt dessutom är all vårt bröd hembakat. Och det är tack vare detta arbete som kunderna kommer tillbaks om och om igen. På Svalan Pizzeria får du en pizza på bara färska råvaror. Vi ställer stora krav på oss själva för att ni skall få ett så bra resultat som möjligt! Välkomna till oss för en smakupplevelse som håller vad vi lovar.</p>
             </div>
         </section>
@@ -47,7 +50,7 @@
                     <img src="images/svalan-restaurant-by-bearsm53.jpg" alt="Restaurant-advertisement" class="info-image">
                     <h3>Reklamfilm</h3>
                     <p>Kolla in våran reklamfilm som vi spelade in tidigare i år.</p>
-                    <a href="video-page.html" target="_blank">Kolla här (popup under construction)</a>
+                    <a href="video-page.html" target="_blank">Kolla här</a>
                 </div>
                 <div class="infobox">
                     <img src="images/Delivery-picture-by-Rodnae-Productions.jpg" alt="Delivery" class="info-image">                  
@@ -62,15 +65,34 @@
             </div>
         </section>
 
-        <section class="news">
-            <h2 class="news-title">Nyheter och Erbjudanden</h2>
-            <img src="images/svalan-restaurant-by-bearsm53.jpg" alt="Restaurant-advertisement" class="news-image">
-            <img src="images/Delivery-picture-by-Rodnae-Productions.jpg" alt="Delivery" class="news-image">
-            <img src="images/Pizza-picture-by-Muffin-Creatives.jpg" alt="Pizza" class="news-image">
-            <p>news carousel *under construction*</p>
-            
+        <section class="slideshow-section">
+            <h2 class="news-section-title">Nyheter</h2>
+            <div class="slideshow-container">
+                <div class="mySlides fade" id="first-slide">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/svalan-restaurant-by-bearsm53.jpg" style="width:100%">
+                    <div class="text">Jan 20 2023: Renovering i lokalen färdig!!!</div>                    
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/Delivery-picture-by-Rodnae-Productions.jpg" style="width:100%">
+                    <div class="text">Dec 03 2022: Nu kan du beställa hemkört med Foodora</div>                    
+                </div>
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/Pizza-picture-by-Muffin-Creatives.jpg" style="width:100%">
+                    <div class="text">Nyhet i menyn: Capricciosa</div>                    
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>                        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+                <br>                    
+                <div style="text-align:center">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>                    </div>
+                </div>
         </section>
-
+        
         <footer>
             <ul class="footer-menu">
                 <li><a href="menu.html">Meny</a></li>                
